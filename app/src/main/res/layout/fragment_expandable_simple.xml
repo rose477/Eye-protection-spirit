@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+
+
+    <com.xuexiang.xui.widget.layout.ExpandableLayout
+        android:id="@+id/expandable_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_weight="1"
+        android:background="@color/main_color"
+
+        app:el_duration="500"
+        app:el_expanded="false">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:clipToPadding="false"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="3dp"
+            android:text="每日使用手机时间"
+            android:textColor="@color/white" />
+
+        <FrameLayout
+            android:id="@+id/frame1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </com.xuexiang.xui.widget.layout.ExpandableLayout>
+
+    <com.xuexiang.xui.widget.layout.ExpandableLayout
+        android:id="@+id/expandable_layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        app:el_duration="500"
+        app:el_expanded="false"
+        android:background="@color/main3"
+        app:el_parallax="0.5">
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="今日使用手机时间分布"-->
+<!--            android:textColor="@color/white" />-->
+        <FrameLayout
+            android:id="@+id/frame2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            />
+
+    </com.xuexiang.xui.widget.layout.ExpandableLayout>
+    <com.xuexiang.xui.widget.alpha.XUIAlphaTextView
+        android:id="@+id/expand_button"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="点击查看手机使用时间监控" />
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="XUITheme.Phone">
+        <item name= "android:windowNoTitle">true</item>//无标题.
+        <item name= "android:windowFullscreen">true</item>//全屏即无通知栏
+        <item name="android:windowContentOverlay" >@null</item>//是否有遮盖
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AppTheme2" parent="XUITheme.Phone">
+        <!-- Customize your theme here. -->
+        <item name= "android:windowNoTitle">true</item>//无标题.
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/main_color</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme3" parent="XUITheme.Phone">
+        <item name= "android:windowNoTitle">true</item>//无标题.
+        <item name= "android:windowFullscreen">true</item>//全屏即无通知栏
+        <item name="android:windowContentOverlay" >@null</item>//是否有遮盖
+        <item name="android:windowBackground" >@drawable/a1</item>
+    </style>
+
+</resources>

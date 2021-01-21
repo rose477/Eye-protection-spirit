@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single"
+
+        >
+
+
+        <item
+            android:id="@+id/item_1"
+            android:checkable="true"
+            android:icon="@mipmap/e"
+            android:title="眼部检测" >
+        </item>
+        <item
+            android:id="@+id/item_2"
+            android:checkable="true"
+            android:icon="@mipmap/flash"
+            android:title="手电筒" >
+        </item>
+        <item
+            android:id="@+id/item_3"
+            android:checkable="true"
+            android:icon="@mipmap/study"
+            android:title="护眼知识" >
+        </item>
+
+    </group>
+<group>
+    android:id="@+id/group2"
+    android:checkableBehavior="single"
+
+    <item
+        android:id="@+id/item_4"
+
+        android:checkable="true"
+        android:icon="@mipmap/about"
+
+        android:title="关于我们" >
+    </item>
+</group>
+</menu>
+

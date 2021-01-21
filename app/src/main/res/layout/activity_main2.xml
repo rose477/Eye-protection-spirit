@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    tools:context="com.hy.hyspirit.MainActivity2">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开启护眼之路"
+        android:textColor="#ffffff"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.12" />
+
+
+
+    <com.xuexiang.xui.widget.button.shadowbutton.ShadowButton
+        android:id="@+id/button1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:text="开启"
+        android:textSize="48sp"
+        android:textColor="@color/main_color"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:sb_color_pressed="@color/main_color"
+        app:sb_color_unpressed="#ffffff"
+
+        app:sb_ripple_alpha="88"
+
+
+        app:sb_ripple_color="#000000"
+        app:sb_ripple_duration="1000"
+        app:sb_shape_type="round" />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">护眼精灵</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_isr_abnf_hint">#ABNF 1.0 gb2312;\n\tlanguage zh-CN;\n\tmode voice;\n\troot $main;\n\t$main = $place1$place2 ;\n\t$place1 = 上 | 下 | 左 | 右 ;\n\t$place2 = 面 | 边 | 方 ;</string>
+    <string name="title_activity_test_eye">TestEyeActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cookie_title">来自护眼精灵的温馨提示</string>
+    <string name="cookie_message">您已连续使用手机超过三十分钟，请注意放松一下，休息一下眼睛奥~</string>
+    <string name="cookie_action">我知道啦</string>
+    <integer name="data">3</integer>
+</resources>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mcxtzhang.swipemenulib.SwipeMenuLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:id="@+id/sanguang_item"
+    android:background="@color/main2_color"
+    app:contentPaddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    app:ios="false"
+    app:leftSwipe="true"
+    app:swipeEnable="true">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/card_view"
+
+
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:cardPreventCornerOverlap="true"
+
+
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#2210C6DD"
+            app:layout_constraintEnd_toStartOf="@+id/center"
+            app:layout_constraintStart_toStartOf="@+id/center">
+
+            <TextView
+                android:id="@+id/top_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="第一次视力测试"
+                android:textColor="@color/main_color"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/layout_parent" />
+
+            <View
+                android:id="@+id/center"
+                android:layout_width="1dp"
+                android:layout_height="70dp"
+                android:background="@color/text_color_gray"
+                app:layout_constraintBottom_toBottomOf="@id/bottom_text"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/top_text" />
+
+            <TextView
+                android:id="@+id/bottom_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="2020年8月29日10:22"
+                android:textSize="8sp"
+                app:layout_constraintBottom_toBottomOf="@id/layout_parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <TextView
+                android:id="@+id/bottom_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="测试时间："
+                android:textSize="8sp"
+                app:layout_constraintBottom_toBottomOf="@id/layout_parent"
+                app:layout_constraintRight_toLeftOf="@id/bottom_text" />
+
+            <TextView
+                android:id="@+id/left_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="正确："
+                android:textColor="@color/main_color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.30"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="@id/center"
+                app:layout_constraintTop_toTopOf="@id/top_text" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="5"
+
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="@id/layout_parent"
+                app:layout_constraintTop_toTopOf="@id/top_text"
+                app:layout_constraintLeft_toRightOf="@id/left_yes" />
+
+
+            <TextView
+                android:id="@+id/right_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="色散可能："
+                android:textColor="@color/main_color"
+                app:layout_constraintBottom_toBottomOf="@id/layout_parent"
+                app:layout_constraintHorizontal_bias="0.3"
+                app:layout_constraintLeft_toLeftOf="@id/center"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/top_text" />
+
+            <View
+                android:id="@+id/center_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                app:layout_constraintBottom_toBottomOf="@id/center"
+                app:layout_constraintTop_toTopOf="@id/center" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="5"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="@id/layout_parent"
+                app:layout_constraintTop_toTopOf="@id/top_text"
+                app:layout_constraintLeft_toRightOf="@id/right_yes" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+    <!-- 以下都是侧滑菜单的内容依序排列 -->
+    <Button
+        android:id="@+id/btnTop"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="#d9dee4"
+        android:text="置顶"
+        android:textColor="@android:color/white" />
+
+    <!--   -->
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="#CC091B"
+        android:text="删除"
+
+        android:textColor="@android:color/white" />
+</com.mcxtzhang.swipemenulib.SwipeMenuLayout>

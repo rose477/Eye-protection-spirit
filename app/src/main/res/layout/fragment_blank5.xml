@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragsemang"
+    tools:context="com.hy.hyspirit.semang.BlankFragment">
+
+    <com.hy.hyspirit.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/sm5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="5.请选择你看到图中的动物"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/circleImageView" />
+
+
+
+    <com.xuexiang.xui.widget.button.ButtonView
+        android:id="@+id/radiobutton1"
+        style="@style/ButtonView.Green"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:text="金鱼"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toStartOf="@+id/radiobutton2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text" />
+
+    <com.xuexiang.xui.widget.button.ButtonView
+        android:id="@+id/radiobutton2"
+        style="@style/ButtonView.Green"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:text="老虎"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toStartOf="@+id/radiobutton3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/radiobutton1"
+        app:layout_constraintTop_toBottomOf="@id/text" />
+
+    <com.xuexiang.xui.widget.button.ButtonView
+        android:id="@+id/radiobutton3"
+        style="@style/ButtonView.Green"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:text="看不清"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/radiobutton2"
+        app:layout_constraintTop_toBottomOf="@id/text" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

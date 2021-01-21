@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main2_color"
+    tools:context="com.hy.hyspirit.semang.SMreportActivity">
+
+    <com.xuexiang.xui.widget.actionbar.TitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/main_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tb_actionPadding="10dp"
+        app:tb_barHeight="65dp"
+        app:tb_leftImageResource="@mipmap/back"
+        app:tb_leftText="返回"
+        app:tb_sideTextPadding="20dp"
+        app:tb_titleText="色盲测试报告"
+        app:tb_useThemeColor="false" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cons2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="100dp"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleBar">
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@mipmap/semang_checked"
+            app:layout_constraintBottom_toTopOf="@id/view4"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/cons2" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="100dp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正确 ："
+            android:textColor="@color/main_color"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView12"
+            app:layout_constraintHorizontal_bias="0.5"
+          app:layout_constraintRight_toLeftOf="@id/center"
+            app:layout_constraintTop_toBottomOf="@+id/top_text" />
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/main_color"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView12"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintLeft_toLeftOf="@+id/center"
+            app:layout_constraintTop_toBottomOf="@+id/top_text" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="色盲可能 ："
+            android:textColor="@color/main_color"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView13"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintRight_toLeftOf="@id/center"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textColor="@color/main_color"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView13"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toLeftOf="@+id/center"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_color"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/view5"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+<!--        <TextView-->
+<!--            android:id="@+id/textView14"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="1"-->
+<!--            android:textColor="@color/main_color"-->
+<!--            android:textSize="24sp"-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/view5"-->
+<!--           app:layout_constraintLeft_toLeftOf="@id/center"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView12" />-->
+
+
+
+        <View
+            android:id="@+id/center"
+            android:layout_width="1dp"
+            android:layout_height="70dp"
+            app:layout_constraintBottom_toBottomOf="@id/view5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/top_text" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="200dp"
+            android:background="@color/text_color_gray"
+            app:layout_constraintTop_toBottomOf="@id/view4" />
+
+        <TextView
+            android:id="@+id/top_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="检测报告"
+            android:textColor="@color/main_color"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/view4" />
+
+
+
+        <com.xuexiang.xui.widget.button.ButtonView
+            android:id="@+id/buttonView4"
+            style="@style/ButtonView.Green"
+
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:text="进入主页"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonView5" />
+
+        <com.xuexiang.xui.widget.button.ButtonView
+            android:id="@+id/buttonView5"
+            style="@style/ButtonView.Green"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:text="结束检测"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view5"
+
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
